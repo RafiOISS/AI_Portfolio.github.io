@@ -38,6 +38,29 @@ h1 {
   font-weight: bold;
 }
 
+.dark-mode .welcome-banner h1{
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background: url(back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+
+@keyframes back {
+  100%{
+    background-position: 2000px 0;
+  }
+}
+
+.dark-mode .welcome-banner h3{
+  background: repeating-linear-gradient(20deg,#00ffff, #ee82ee, #ffdf00, #ee82ee,#00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+
 h2 {
   font-size: 60px;
   font-weight: bold;
@@ -56,6 +79,28 @@ h5 {
 /* Navbar styles */
 .navbar {
   background-color: rgba(30, 50, 30, 0.8);
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0%; 
+  height: 3px;
+  position: absolute; 
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%); 
+  background: #fff;
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after{
+  width: 50%;
 }
 
 .navbar-nav .nav-link {
@@ -87,8 +132,22 @@ h5 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #fff;
   color: #333;
+  background: repeating-linear-gradient(20deg,#00ffff, #ee82ee, #ffdf00);
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* About section styles */
@@ -289,10 +348,12 @@ li::marker {
 }
 
 .dark-mode .welcome-banner {
-  background-color: #222;
+  background: repeating-linear-gradient(20deg, #000 30%, #444, #000);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
 }
 
-.dark-mode .welcome-banner h1,
+/*.dark-mode .welcome-banner h1,*/
 .dark-mode .welcome-banner h3 {
   color: #fff;
 }
