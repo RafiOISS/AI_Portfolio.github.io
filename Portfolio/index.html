@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="[removal.ai]_tmp-649268f68bf35.png" alt="Logo">
+        <spam style="font-weight: bold">Portfolio</spam>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <button id="dark-mode-toggle" class="btn btn-sm btn-outline-light">
+              <i class="bi bi-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="welcome-banner">
+    <div class="container text-center">
+      <h1>Welcome to My Portfolio</h1>
+      <h3>Computer Science and Engineering Student</h3>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>About Me</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum vitae enim eu facilisis. Morbi fermentum lectus at tortor tincidunt, id congue mi rutrum.</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="Firefly front view slightly angled view of a guy wearing glasses 79380.jpg" alt="Profile Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <a href="#" class="project-card">
+            <div class="card">
+              <div class="card-img">
+                <img src="Firefly microcontroller robot arm prototype of 19th century 22842.jpg" alt="Project 1">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#" class="project-card">
+            <div class="card">
+              <div class="card-img">
+                <img src="Firefly high contrast look of a microcontroller drone prototype of 19th century 82720.jpg" alt="Project 2">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#" class="project-card">
+            <div class="card">
+              <div class="card-img">
+                <img src="Firefly microcontroller lego RC car prototype 71866.jpg" alt="Project 3">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Services</h2>
+      <div id="serviceCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#serviceCarousel" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#serviceCarousel" data-bs-slide-to="1"></li>
+          <li data-bs-target="#serviceCarousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="service-card">
+                  <i class="bi bi-laptop"></i>
+                  <h4>Web Development</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum vitae enim eu facilisis.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service-card">
+                  <i class="bi bi-phone"></i>
+                  <h4>Mobile App Development</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum vitae enim eu facilisis.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service-card">
+                  <i class="bi bi-palette"></i>
+                  <h4>UI/UX Design</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum vitae enim eu facilisis.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="service-card">
+                  <i class="bi bi-camera"></i>
+                  <h4>Photography</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum vitae enim eu facilisis.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service-card">
+                  <i class="bi bi-printer"></i>
+                  <h4>Print Design</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum vitae enim eu facilisis.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service-card">
+                  <i class="bi bi-headset"></i>
+                  <h4>Customer Support</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum vitae enim eu facilisis.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="service-card">
+                  <i class="bi bi-pie-chart"></i>
+                  <h4>Data Analysis</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum vitae enim eu facilisis.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service-card">
+                  <i class="bi bi-tools"></i>
+                  <h4>Technical Consulting</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum vitae enim eu facilisis.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service-card">
+                  <i class="bi bi-globe"></i>
+                  <h4>International Services</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum vitae enim eu facilisis.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#serviceCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#serviceCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>   
+
+<footer id="contact" class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="contact-info">
+        <h5 class="contact-heading">Contact Me:</h5>
+      </div>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="social-icon"><i class="bi bi-github"></i></a>
+      </div>
+      <p class="footer-text">&copy; 2023 Your Name</p>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+    
+</body>
+</html>
