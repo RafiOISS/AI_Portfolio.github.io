@@ -106,7 +106,7 @@ h5 {
 /* Project card styles */
 #projects {
   padding: 200px 0;
-  background-color: #fff;
+  background-color: #d3edff;
 }
 
 .project-card {
@@ -149,6 +149,10 @@ h5 {
 }
 
 /* service styles */
+#services{
+  background-color: #ffd3d3;
+}
+
 .section {
   padding: 200px 0;
   height: 100vh;
@@ -250,7 +254,7 @@ h5 {
 
 
 .carousel-item {
-  background-color: #fff;
+  background-color: #ffd3d3;
   transition: background-color 0.33s;
   height: 20rem;
   border-radius: 5px;
